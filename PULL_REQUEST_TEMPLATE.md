@@ -1,16 +1,21 @@
-## Summary
+## 改了什么
 
 - 
 
-## Verification
-
-- [ ] I ran the relevant local checks or tests.
-- [ ] I updated documentation or notes when behavior changed.
-
-## Risk
+## 为什么改
 
 - 
 
-## Follow-up
+## 怎么检查
+
+- [ ] 我运行了相关本地检查或测试。
+- [ ] 如果只是文档/配置修改，我已经手动检查过页面或文件内容。
+- [ ] 如果行为变化了，我同步更新了 README 或说明。
+
+## 风险和影响
+
+- 
+
+## 后续工作
 
 - 
