@@ -38,6 +38,8 @@ docs/setup-guide
 
 ## PR 要求
 
+PR 还需要符合 [工程与交付规范](https://github.com/laby-ai/.github/blob/main/ENGINEERING_STANDARDS.md)，尤其是代码可维护性、用户交付体验和测试检查证据。
+
 PR 不需要写长，但必须可判断：
 
 - 改了什么
