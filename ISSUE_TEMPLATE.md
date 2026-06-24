@@ -1,11 +1,19 @@
-## Context
+## 背景
 
-What needs to be done, decided, or investigated?
+这个 issue 想解决什么问题？相关仓库、页面、截图或链接是什么？
 
-## Expected Outcome
+## 期望结果
 
-What result should close this issue?
+完成后应该看到什么结果？
 
-## Notes
+## 建议做法
 
-Add links, screenshots, logs, or constraints that help with the work.
+如果你已经有想法，写在这里；没有也可以留空。
+
+## 检查方式
+
+怎么判断这个 issue 完成了？
+
+## 备注
+
+补充报错、截图、命令、参考资料或需要注意的地方。
