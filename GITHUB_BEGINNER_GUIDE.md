@@ -8,6 +8,7 @@
 2. 登录或注册 GitHub 账号。
 3. 点接受邀请，加入 `laby-ai` 组织。
 4. 加入后打开组织主页：https://github.com/laby-ai
+5. 先看组织主页上的项目目录和协作流程。
 
 ## 2. 修改已有项目的标准流程
 
@@ -22,7 +23,26 @@
 7. 创建 Pull Request，等别人 review。
 8. review 通过后再合并到 `main`。
 
-## 3. 分支命名怎么写
+最简单记忆版：
+
+```text
+拉最新 main -> 新建分支 -> 修改 -> commit -> push -> Pull Request -> review -> merge
+```
+
+## 3. 如果只会网页操作
+
+GitHub 网页也可以做小的文档修改，但仍然不要直接改 `main`：
+
+1. 打开文件。
+2. 点编辑。
+3. 修改内容。
+4. 提交时选择 `Create a new branch for this commit and start a pull request`。
+5. 不要选择直接提交到 `main`。
+6. 创建 Pull Request，等别人看过再合并。
+
+如果页面问你是提交到 `main` 还是新建分支，选“新建分支”。
+
+## 4. 分支命名怎么写
 
 分支名用英文、数字和短横线，尽量看得出是谁在做什么。
 
@@ -35,10 +55,10 @@
 例子：
 
 ```text
-yanjiajia/fix-login-page
 mengwei/add-readme
 feature/data-cleaning
-bugfix/upload-error
+fix/upload-error
+docs/setup-guide
 ```
 
 如果不会英文，可以先用拼音和简单词：
@@ -48,7 +68,7 @@ xiaoming/update-doc
 jiaojiao/fix-bug
 ```
 
-## 4. 常用命令
+## 5. 常用命令
 
 第一次下载项目：
 
@@ -91,11 +111,11 @@ git push -u origin 你的名字/任务简称
 
 然后去 GitHub 页面创建 Pull Request。
 
-## 5. Pull Request 怎么写
+## 6. Pull Request 怎么写
 
 PR 标题要短，说明这次做了什么。
 
-PR 内容建议写三块：
+PR 内容建议写四块：
 
 ```text
 ## 改了什么
@@ -106,11 +126,14 @@ PR 内容建议写三块：
 
 ## 怎么检查
 - 
+
+## 风险或后续
+- 
 ```
 
 如果没有测试，也要写清楚自己怎么手动看过。
 
-## 6. 不要做这些事
+## 7. 不要做这些事
 
 - 不要直接 push 到 `main`。
 - 不要把密码、API Key、token、个人隐私文件提交到仓库。
@@ -118,7 +141,7 @@ PR 内容建议写三块：
 - 不要删除别人正在用的文件，除非已经确认。
 - 不确定时先开 issue 或在群里问。
 
-## 7. 自己新建项目时
+## 8. 自己新建项目时
 
 可以自己在 `laby-ai` 组织下创建仓库。建议：
 
@@ -127,7 +150,7 @@ PR 内容建议写三块：
 - 如果只是内部实验，优先建 private 仓库。
 - 如果要公开展示，再建 public 仓库。
 
-## 8. 遇到冲突怎么办
+## 9. 遇到冲突怎么办
 
 如果 GitHub 提示 conflict，不要乱点。先在群里说：
 
@@ -145,13 +168,3 @@ git merge main
 ```
 
 如果看不懂冲突内容，先停下来，不要强行提交。
-
-## 9. 最简单记忆版
-
-改已有项目：
-
-```text
-拉最新 main -> 新建分支 -> 修改 -> commit -> push -> Pull Request -> review -> merge
-```
-
-只要遵守“不直接改 main”，大部分问题都可以安全修回来。
