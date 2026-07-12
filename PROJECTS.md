@@ -1,35 +1,34 @@
-# LabY 项目目录
+# LabY project directory
 
-这个文件记录 `laby-ai` 组织里的项目入口和维护状态。新建仓库后建议同步更新这里，方便新成员快速知道每个仓库是做什么的。
+StoneAI is managed as four product repositories. The organization `.github`
+repository contains shared policy and templates and is not a fifth product.
 
-## 项目列表
+## Product repositories
 
-| 仓库 | 可见性 | 主要技术 | 当前定位 | 建议维护人 |
-| --- | --- | --- | --- | --- |
-| [knowtrail](https://github.com/laby-ai/knowtrail) | Public | TypeScript | NotebookLM-style source-grounded workspace：引用问答、音频摘要、slides、课堂流和知识路径。 | 待指定 |
-| sceneweave | Private | TypeScript | AIGC short-film studio：分段视频生成、frame handoff、音频连续性和可恢复生产流。 | 待指定 |
-| [.github](https://github.com/laby-ai/.github) | Public | Markdown | 组织主页、默认模板、新手指南和协作规范。 | Owners / Maintainers |
+| Domain | Repository | Visibility | Runtime owner |
+| --- | --- | --- | --- |
+| Website | [stoneai-official](https://github.com/laby-ai/stoneai-official) | Private | Public site and product entry points |
+| Account and billing | [account-entitlement](https://github.com/laby-ai/account-entitlement) | Private | Identity, tenant/member, RBAC, billing and audit |
+| Lingbi | [knowtrail](https://github.com/laby-ai/knowtrail) | Public | Research workspace and grounded products |
+| Huiying | [sceneweave](https://github.com/laby-ai/sceneweave) | Public | Film, canvas, media, provider tasks and composition |
 
-## 仓库状态建议
+## Gitee engineering references
 
-每个仓库 README 建议至少写清楚：
+`zhiqi-admin-vue3`, `zhiqi-studio-web`, `zhiqi-ai-python` and
+`zhiqi-admin-backend` are read-only references. LabY adopts their request,
+authentication, API, health, logging, metrics, task-isolation, CI and release
+contracts inside the four product repositories. Their source is not copied and
+no empty repository is created merely to match a language or directory name.
 
-- 项目一句话说明
-- 当前负责人或维护人
-- 本地运行方式
-- 测试或检查命令
-- 常见问题
-- 当前阶段：实验 / 内测 / 可展示 / 暂停维护
+Each product README must link its `docs/engineering-alignment.md`, which records
+the product owner boundary, reference mapping, required checks and rollout
+contract.
 
-## 新建仓库命名
+## Repository lifecycle
 
-优先使用英文小写和短横线：
-
-```text
-course-demo
-agent-notes
-video-pipeline
-ui-experiments
-```
-
-内部实验优先创建 private 仓库。确定要公开展示或开源时，再切换为 public，并先检查 README、许可证、敏感信息和演示说明。
+- New product repositories require a real runtime owner and consumer.
+- Experiments remain in a product branch or documented sandbox until promoted.
+- Duplicate repositories are retired only after production remotes and source
+  commits prove they are unused, and a recoverable bundle is retained.
+- Every source fix uses branch, commit, pull request, CI and merged commit
+  traceability before release.
